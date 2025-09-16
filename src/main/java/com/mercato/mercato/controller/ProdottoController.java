@@ -36,7 +36,7 @@ public class ProdottoController {
 
     @PostMapping
     public Prodotto creaProdotto(@RequestBody Prodotto prodotto) {
-        logger.info("Richiesta POST per aggiungere il prodotto: " + prodotto);
+        logger.info("Richiesta POST per aggiungere il prodotto: " + prodotto.toString());
         return prodottoService.creaProdotto(prodotto);
     }
 

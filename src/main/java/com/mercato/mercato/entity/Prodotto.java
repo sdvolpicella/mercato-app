@@ -58,4 +58,13 @@ public class Prodotto {
     public void setPrezzo(BigDecimal prezzo) {
         this.prezzo = prezzo;
     }
+
+    @Override
+    public String toString() {
+        return "Prodotto{" +
+                "nome='" + nome + '\'' +
+                ", descrizione='" + descrizione + '\'' +
+                ", prezzo=" + prezzo +
+                '}';
+    }
 }
